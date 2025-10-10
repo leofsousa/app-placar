@@ -23,26 +23,26 @@ export const Header = ({ activeTab, setActiveTab }) => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full flex items-center justify-center gap-4 bg-secondary transition-all duration-500 z-50 h-24 ${
+      className={`fixed top-0 left-0 w-full flex items-center justify-center gap-4 bg-card transition-all duration-500 z-50 h-24 ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-full"
       }`}
     >
       <button
         onClick={() => setActiveTab("placar")}
-        className={`w-56 font-bold text-2xl px-4 py-2 rounded-xl transition-colors duration-300 ${
+        className={`w-56 font-bold text-2xl px-4 py-2 rounded-xl transition-colors duration-300 border-2 border-accent ${
           activeTab === "placar"
-            ? "bg-primary text-white"
-            : "bg-accent text-secondary hover:bg-orange-100"
+            ? "bg-accent text-white border-white"
+            : "bg-card text-text-secondary hover:bg-btn-primary"
         }`}
       >
         Placar
       </button>
       <button
         onClick={() => setActiveTab("teams")}
-        className={`w-56 font-bold text-2xl px-4 py-2 rounded-xl transition-colors duration-300 ${
+        className={`w-56 font-bold text-2xl px-4 py-2 rounded-xl transition-colors duration-300 border-2 border-accent ${
           activeTab === "teams"
-            ? "bg-primary text-white"
-            : "bg-accent text-secondary hover:bg-orange-100"
+            ? "bg-accent text-white border-white"
+            : "bg-card text-text-secondary hover:bg-orange-100"
         }`}
       >
         Adicionar Times
