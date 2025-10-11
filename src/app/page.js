@@ -15,7 +15,7 @@ export default function Home() {
       <div className="flex gap-4 w-full overflow-x-hidden justify-around">
         <TimeCard color="red" teamName="Time 1" />
         <TimeCard color="green" teamName="Time 2" />
-        <TimeCard color="green" teamName="Time 2" />
+        <TimeCard color="blue" teamName="Time 2" />
       </div>
     </div>
   );
