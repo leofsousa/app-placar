@@ -3,7 +3,7 @@
 import { X } from "lucide-react";
 import { useEffect } from "react";
 
-export const Modal = ({ isOpen, onClose }) => {
+export const Modal = ({ isOpen, onClose, children }) => {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
@@ -42,6 +42,7 @@ export const Modal = ({ isOpen, onClose }) => {
         >
           <X className="text-text-secondary" size={24} />
         </button>
+        <div className="clear-both p-4">{children}</div>
       </div>
     </div>
   );

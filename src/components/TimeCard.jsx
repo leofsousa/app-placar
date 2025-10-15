@@ -1,12 +1,18 @@
 "use client";
-import { Minus, Plus } from "lucide-react";
+import { Minus, Plus, X } from "lucide-react";
 import { useState } from "react";
 
-export const TimeCard = ({ teamName, color }) => {
+export const TimeCard = ({ onRemove, teamName, color }) => {
   const [pontuacao, setPontuacao] = useState(0);
 
   return (
-    <div className="flex flex-1 min-w-0 flex-col justify-center items-center bg-card rounded-2xl mx-8 shadow text-text-primary">
+    <div className="relative flex flex-1 min-w-0 flex-col justify-center items-center bg-card rounded-2xl mx-8 shadow text-text-primary">
+      <button
+        onClick={onRemove}
+        className="absolute top-4 right-4 text-accent-red hover:text-red-700 transition"
+      >
+        <X size={24} />
+      </button>
       <h1 className="text-7xl font-bold pt-16 px-16 ">{teamName}</h1>
       <div
         className="rounded-3xl h-8 w-1/3 mt-4 mb-10 min-w-0"
