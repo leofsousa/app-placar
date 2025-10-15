@@ -1,4 +1,5 @@
 "use client";
+import { Minus, Plus } from "lucide-react";
 import { useState } from "react";
 
 export const TimeCard = ({ teamName, color }) => {
@@ -18,7 +19,7 @@ export const TimeCard = ({ teamName, color }) => {
           className="bg-accent-green px-10 rounded-4xl font-extrabold text-4xl"
           onClick={() => setPontuacao(pontuacao + 1)}
         >
-          +
+          <Plus className="" />
         </button>
         <button
           className="bg-btn-primary font-extrabold text-2xl py-4 px-8 text-black rounded-4xl"
@@ -32,7 +33,7 @@ export const TimeCard = ({ teamName, color }) => {
             pontuacao === 0 ? setPontuacao(0) : setPontuacao(pontuacao - 1)
           }
         >
-          -
+          <Minus />
         </button>
       </div>
     </div>

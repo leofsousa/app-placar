@@ -2,13 +2,14 @@
 import { useState } from "react";
 import { Header } from "@/components/Header";
 import { TimeCard } from "@/components/TimeCard";
+import { Modal } from "@/components/Modal";
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState("placar");
-
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <div className="">
-      <Header activeTab={activeTab} setActiveTab={setActiveTab} />
+      <Header onOpenModal={() => setIsModalOpen(true)} />
+      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <h1 className="text-center font-extrabold text-8xl m-24 text-text-primary">
         Placar
       </h1>
