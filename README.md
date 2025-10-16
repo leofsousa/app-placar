@@ -23,13 +23,16 @@ O **App Scoreboard** é uma aplicação web moderna desenvolvida para exibição
 
 Este projeto foi desenvolvido a pedido de um amigo para auxiliar na gestão de pontuação em eventos ao vivo, proporcionando uma solução visual e prática para acompanhamento de competições em telas de grande formato.
 
-<!-- 
-📸 ADICIONE AQUI OS PRINTS DO APP
-Exemplos:
-![Screenshot Principal](./screenshots/home.png)
-![Modal de Adicionar Time](./screenshots/modal.png)
-![Placar em Ação](./screenshots/placar-acao.gif)
--->
+## 📸 Screenshots
+
+### Tela Inicial
+![Tela Inicial](./screenshots/tela-inicial.png)
+
+### Times Cadastrados
+![Times Cadastrados](./screenshots/tela-times.png)
+
+### Modal - Adicionar Time
+![Modal Adicionar Time](./screenshots/modal-add-time.png)
 
 ---
 
